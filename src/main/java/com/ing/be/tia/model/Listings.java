@@ -19,9 +19,9 @@ import java.util.List;
 @Table
 public class Listings {
     @Id
-    @GeneratedValue(strategy = GenerationType.AUTO)
+    @GeneratedValue(strategy = GenerationType.TABLE)
     @JsonIgnore
-    private int number;
+    private int Number;
     private int channelNumber;
     private int subChannelNumber;
     private int stationID;
